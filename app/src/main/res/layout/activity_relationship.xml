@@ -60,9 +60,7 @@
                 android:layout_weight="1"
                 android:text="夫"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="夫" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -76,9 +74,7 @@
                 android:layout_weight="1"
                 android:text="妻"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="妻" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -127,9 +123,7 @@
                 android:layout_weight="1"
                 android:text="父"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="父" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -143,9 +137,7 @@
                 android:layout_weight="1"
                 android:text="母"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="母" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -159,9 +151,7 @@
                 android:layout_weight="1"
                 android:text="兄"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="兄" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -175,9 +165,7 @@
                 android:layout_weight="1"
                 android:text="弟"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="弟" />
+                android:background="?attr/selectableItemBackground" />
         </LinearLayout>
 
         <View
@@ -198,9 +186,7 @@
                 android:layout_weight="1"
                 android:text="姐"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="姐" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -214,9 +200,7 @@
                 android:layout_weight="1"
                 android:text="妹"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="妹" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -230,9 +214,7 @@
                 android:layout_weight="1"
                 android:text="子"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="子" />
+                android:background="?attr/selectableItemBackground" />
 
             <View
                 android:layout_width="1dp"
@@ -246,9 +228,7 @@
                 android:layout_weight="1"
                 android:text="女"
                 android:textSize="18sp"
-                android:background="?attr/selectableItemBackground"
-                android:onClick="onRelationButtonClick"
-                android:tag="女" />
+                android:background="?attr/selectableItemBackground" />
         </LinearLayout>
 
         <View
