@@ -25,6 +25,21 @@ jobs:
       with:
         gradle-version: 8.2
 
+    - name: Generate release keystore
+      run: |
+        cd app
+        if [ ! -f "release.keystore" ]; then
+          keytool -genkey -v \
+            -keystore release.keystore \
+            -alias allinone \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass allinone123 \
+            -keypass allinone123 \
+            -dname "CN=AllInOne Calculator, OU=Dev, O=Example, L=Beijing, ST=Beijing, C=CN"
+        fi
+
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
@@ -42,29 +57,6 @@ jobs:
       with:
         name: debug-apk
         path: app/build/outputs/apk/debug/*.apk
-
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
-
-    - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
-      with:
-        gradle-version: 8.2
-
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
 
     - name: Build Release APK
       run: ./gradlew assembleRelease
