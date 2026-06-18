@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E8E8E8">
+    android:background="@color/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#3E3630" />
+        android:background="@color/colorPrimary" />
 
     <!-- 结果显示区域 -->
     <LinearLayout
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="#333333"
+            android:textColor="@color/textPrimary"
             android:textSize="24sp"
             android:layout_marginBottom="16dp" />
 
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="#666666"
+            android:textColor="@color/textSecondary"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#FFFFFF">
+        android:background="@color/cardBackground">
 
         <!-- 第一行: 夫 妻 退格 清空 -->
         <LinearLayout

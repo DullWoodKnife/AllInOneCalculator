@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#5C5046">
+    android:background="@color/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#3E3630" />
+        android:background="@color/colorPrimary" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="当前年龄"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -33,8 +33,8 @@
                 android:id="@+id/etCurrentAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入当前年龄"
                 android:padding="12dp"
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="计划退休年龄"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -53,8 +53,8 @@
                 android:id="@+id/etRetirementAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入计划退休年龄"
                 android:padding="12dp"
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="月收入 (元)"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -73,8 +73,8 @@
                 android:id="@+id/etMonthlyIncome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入月收入"
                 android:padding="12dp"
@@ -85,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="月储蓄比例 (%)"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -93,8 +93,8 @@
                 android:id="@+id/etSavingsPercent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入月储蓄比例"
                 android:padding="12dp"
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="当前储蓄 (元)"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -113,8 +113,8 @@
                 android:id="@+id/etCurrentSavings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入当前储蓄金额"
                 android:padding="12dp"
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="年化收益率 (%)"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -133,8 +133,8 @@
                 android:id="@+id/etReturnRate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入年化收益率"
                 android:padding="12dp"
@@ -145,9 +145,9 @@
                 android:id="@+id/btnCalculate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#8B7D6B"
+                android:background="@color/colorAccent"
                 android:text="计算退休规划"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="18sp"
                 android:padding="12dp"
                 android:layout_marginBottom="24dp" />
@@ -156,8 +156,8 @@
                 android:id="@+id/tvResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:padding="16dp"
                 android:minHeight="150dp" />

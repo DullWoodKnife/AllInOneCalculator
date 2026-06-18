@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#5C5046">
+    android:background="@color/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#3E3630" />
+        android:background="@color/colorPrimary" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="输入数值"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -33,8 +33,8 @@
                 android:id="@+id/etInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textColorHint="#AAAAAA"
                 android:hint="请输入要转换的数值"
                 android:padding="12dp"
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="从"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -53,7 +53,7 @@
                 android:id="@+id/spinnerFrom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
+                android:background="@color/cardBackground"
                 android:padding="12dp"
                 android:layout_marginBottom="16dp" />
 
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="到"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
 
@@ -69,7 +69,7 @@
                 android:id="@+id/spinnerTo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
+                android:background="@color/cardBackground"
                 android:padding="12dp"
                 android:layout_marginBottom="24dp" />
 
@@ -77,9 +77,9 @@
                 android:id="@+id/btnConvert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#8B7D6B"
+                android:background="@color/colorAccent"
                 android:text="转换"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/textPrimary"
                 android:textSize="18sp"
                 android:padding="12dp"
                 android:layout_marginBottom="24dp" />
@@ -88,8 +88,8 @@
                 android:id="@+id/tvResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#6B5F55"
-                android:textColor="#FFFFFF"
+                android:background="@color/cardBackground"
+                android:textColor="@color/textPrimary"
                 android:textSize="18sp"
                 android:padding="16dp"
                 android:minHeight="100dp" />

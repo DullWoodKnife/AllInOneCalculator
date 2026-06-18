@@ -53,9 +53,12 @@ public class AgeCalculator {
     }
 
     public static int calculateZodiac(int month, int day) {
+        if (month < 1 || month > 12 || day < 1 || day > 31) {
+            return 0;
+        }
         int[] zodiacDays = {20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22};
         if (day < zodiacDays[month - 1]) {
-            return month - 1;
+            return (month - 1 + 12) % 12;
         } else {
             return month % 12;
         }
