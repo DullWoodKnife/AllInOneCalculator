@@ -2,8 +2,9 @@ package com.example.calculator.activities;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,7 +17,6 @@ public class RelationshipActivity extends AppCompatActivity {
 
     private TextView tvRelationPath;
     private TextView tvResult;
-    private GridLayout gridButtons;
     private Button btnBackspace;
     private Button btnClear;
     private Button btnMutualCheck;
@@ -24,13 +24,6 @@ public class RelationshipActivity extends AppCompatActivity {
 
     private List<String> relationChain = new ArrayList<>();
     private boolean isMutualCheckMode = false;
-
-    // 按钮定义: 关系代码, 显示文本
-    private final String[][] BUTTONS = {
-            {"夫", "夫"}, {"妻", "妻"},
-            {"父", "父"}, {"母", "母"}, {"兄", "兄"}, {"弟", "弟"},
-            {"姐", "姐"}, {"妹", "妹"}, {"子", "子"}, {"女", "女"}
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +36,12 @@ public class RelationshipActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         initViews();
-        setupButtons();
+        setupRelationButtons();
     }
 
     private void initViews() {
         tvRelationPath = findViewById(R.id.tvRelationPath);
         tvResult = findViewById(R.id.tvResult);
-        gridButtons = findViewById(R.id.gridButtons);
         btnBackspace = findViewById(R.id.btnBackspace);
         btnClear = findViewById(R.id.btnClear);
         btnMutualCheck = findViewById(R.id.btnMutualCheck);
@@ -61,25 +53,24 @@ public class RelationshipActivity extends AppCompatActivity {
         btnEqual.setOnClickListener(v -> onCalculate());
     }
 
-    private void setupButtons() {
-        // 动态创建关系按钮
-        for (String[] button : BUTTONS) {
-            Button btn = new Button(this);
-            btn.setText(button[1]);
-            btn.setTextSize(18);
-            btn.setTextColor(getResources().getColor(android.R.color.black));
-            btn.setBackgroundResource(android.R.drawable.btn_default);
+    private void setupRelationButtons() {
+        // 设置关系按钮点击事件
+        setupButton(R.id.btnHusband, "夫");
+        setupButton(R.id.btnWife, "妻");
+        setupButton(R.id.btnFather, "父");
+        setupButton(R.id.btnMother, "母");
+        setupButton(R.id.btnElderBrother, "兄");
+        setupButton(R.id.btnYoungerBrother, "弟");
+        setupButton(R.id.btnElderSister, "姐");
+        setupButton(R.id.btnYoungerSister, "妹");
+        setupButton(R.id.btnSon, "子");
+        setupButton(R.id.btnDaughter, "女");
+    }
 
-            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
-            params.width = 0;
-            params.height = GridLayout.LayoutParams.WRAP_CONTENT;
-            params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f);
-            params.rowSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f);
-            params.setMargins(4, 4, 4, 4);
-            btn.setLayoutParams(params);
-
-            btn.setOnClickListener(v -> onRelationButtonClick(button[0]));
-            gridButtons.addView(btn);
+    private void setupButton(int buttonId, String relation) {
+        Button btn = findViewById(buttonId);
+        if (btn != null) {
+            btn.setOnClickListener(v -> onRelationButtonClick(relation));
         }
     }
 

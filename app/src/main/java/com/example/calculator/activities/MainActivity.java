@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void initModules() {
         modules = new ArrayList<>();
-        modules.add(new CalculatorModule("电阻转换", "Ω", R.drawable.ic_resistance, ResistanceActivity.class));
-        modules.add(new CalculatorModule("油耗量转换", "⛽", R.drawable.ic_fuel, FuelConsumptionActivity.class));
-        modules.add(new CalculatorModule("能量转换", "⚡", R.drawable.ic_energy, EnergyActivity.class));
-        modules.add(new CalculatorModule("年龄计算", "Age", R.drawable.ic_age, AgeActivity.class));
-        modules.add(new CalculatorModule("BMI指数", "BMI", R.drawable.ic_bmi, BMIActivity.class));
-        modules.add(new CalculatorModule("购车计算", "🚗", R.drawable.ic_car, CarActivity.class));
-        modules.add(new CalculatorModule("退休计算", "☕", R.drawable.ic_retirement, RetirementActivity.class));
-        modules.add(new CalculatorModule("亲戚称呼", "亲", R.drawable.ic_relationship, RelationshipActivity.class));
+        modules.add(new CalculatorModule("电阻转换", "Ω", android.R.drawable.ic_menu_sort_by_size, ResistanceActivity.class));
+        modules.add(new CalculatorModule("油耗量转换", "⛽", android.R.drawable.ic_menu_sort_by_size, FuelConsumptionActivity.class));
+        modules.add(new CalculatorModule("能量转换", "⚡", android.R.drawable.ic_menu_sort_by_size, EnergyActivity.class));
+        modules.add(new CalculatorModule("年龄计算", "Age", android.R.drawable.ic_menu_my_calendar, AgeActivity.class));
+        modules.add(new CalculatorModule("BMI指数", "BMI", android.R.drawable.ic_menu_info_details, BMIActivity.class));
+        modules.add(new CalculatorModule("购车计算", "🚗", android.R.drawable.ic_menu_agenda, CarActivity.class));
+        modules.add(new CalculatorModule("退休计算", "☕", android.R.drawable.ic_menu_day, RetirementActivity.class));
+        modules.add(new CalculatorModule("亲戚称呼", "亲", android.R.drawable.ic_menu_share, RelationshipActivity.class));
     }
 }
