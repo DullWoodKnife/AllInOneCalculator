@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">全能计算器</string>
+    <string name="resistance_conversion">电阻转换</string>
+    <string name="fuel_consumption">油耗量转换</string>
+    <string name="energy_conversion">能量转换</string>
+    <string name="age_calculator">年龄计算</string>
+    <string name="bmi_calculator">BMI指数</string>
+    <string name="car_calculator">购车计算</string>
+    <string name="retirement_calculator">退休计算</string>
+    <string name="relationship_calculator">亲戚称呼</string>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5C5046">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3E3630" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贷款计算"
+                    android:textColor="#FFFFFF"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rbFuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="燃油费用"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="24dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆价格 (元)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etCarPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入车辆价格"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首付比例 (%)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etDownPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入首付比例"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款年限"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etLoanYears"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入贷款年限"
+                android:padding="12dp"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年利率 (%)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etInterestRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入年利率"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行驶里程 (公里)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入行驶里程"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="百公里油耗 (L/100km)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etFuelConsumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入百公里油耗"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃油单价 (元/L)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etFuelPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入燃油单价"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8B7D6B"
+                android:text="计算"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:minHeight="150dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

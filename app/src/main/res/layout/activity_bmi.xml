@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5C5046">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3E3630" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高 (cm)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入身高"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重 (kg)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入体重"
+                android:padding="12dp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8B7D6B"
+                android:text="计算BMI"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6B5F55"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:minHeight="150dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
